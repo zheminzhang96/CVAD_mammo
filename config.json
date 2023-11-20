@@ -1,0 +1,15 @@
+{
+    "DICOMHome": "/mnt/storage/breast_cancer_kaggle/train_images",
+    "OutputDirectory": "/mnt/storage/breast_cancer_kaggle/train_images_png",
+    "Depth": 1,
+    "SplitIntoChunks": 10,
+    "PrintImages": true,
+    "CommonHeadersOnly": false,
+    "PublicHeadersOnly": true,
+    "SpecificHeadersOnly": false,
+    "UseProcesses": 12,
+    "FlattenedToLevel": "patient",
+    "is16Bit":true,
+    "SendEmail": false,
+    "YourEmail": false
+}

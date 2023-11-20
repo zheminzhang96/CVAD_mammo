@@ -7,5 +7,8 @@ def recon_loss(recon_x, x, mu, logvar, mu2, logvar2, variational_beta, imgSize, 
     KLD += -0.5 * torch.sum(1 + logvar2 - mu2.pow(2) - logvar2.exp())
     # Normalise by same number of elements as in reconstruction
     KLD /= bsz * imgSize * imgSize * channel
+    # print("MSE ", MSE)
+    # print("KLD ", KLD)
+    # print("----recon_loss", MSE + variational_beta * KLD , "----")
     return MSE + variational_beta * KLD
 

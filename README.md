@@ -42,6 +42,20 @@ To use the model for SIIM-ISIC dataset, please download the data from https://ww
 python -u main.py siim CVAD ./ --channel 3 --cvae_n_epochs 100 --cls_n_epochs 20 
 
 ```
+#### RSNA-Breast
+```shell
+python -u main.py breast CVAD --channel 1 --capacity 4 --cvae_n_epochs 100 --cls_n_epochs 20
+
+python -u main.py breast CVAD --channel 1 --capacity 4  --cvae_n_epochs 100 --cls_n_epochs 20 --cvae_lr 0.000001 --cls_lr 0.000001
+
+```
+#### Try Data set
+``` shell
+python -u main.py try CVAD --channel 1 --capacity 4  --cvae_n_epochs 20 --cls_n_epochs 8 --cvae_lr 0.000001 --cls_lr 0.000001
+
+python -u main.py try CVAD --load_cvae_model True --cvae_model_path /mnt/storage/breast_cancer_kaggle/CVAD/weights/try/
+
+```
 
 ## 4. Citing CVAD
 If you use this repository or would like to refer the paper, please use the following BibTeX entry

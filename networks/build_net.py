@@ -8,7 +8,7 @@ def build_CVAD_net(dataset_name, net_name, capacity, channel):
     
     logger = logging.getLogger()
     logger.info("Build CVAD embnet for {}".format(dataset_name))
-    assert dataset_name in ['cifar10', 'siim']
+    assert dataset_name in ['cifar10', 'siim', 'breast', 'try']
     
     if dataset_name == "cifar10":
         netG = CVAE32(capacity,channel)

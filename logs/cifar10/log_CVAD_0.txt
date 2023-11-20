@@ -1,0 +1,239 @@
+2023-08-21 13:58:52,699 - root - INFO - Log file is ./logs/cifar10/log_CVAD_0.txt
+2023-08-21 13:58:52,699 - root - INFO - Data path is ./
+2023-08-21 13:58:52,699 - root - INFO - Dataset: cifar10
+2023-08-21 13:58:52,699 - root - INFO - Net Name: CVAD
+2023-08-21 13:58:52,699 - root - INFO - CVAE Conv capacity: 16
+2023-08-21 13:58:52,699 - root - INFO - image channel: 3
+2023-08-21 13:58:52,699 - root - INFO - ------------Stage-1--------------
+2023-08-21 13:58:52,699 - root - INFO - CVAE batchsize: 64
+2023-08-21 13:58:52,699 - root - INFO - CVAE epochs: 100
+2023-08-21 13:58:52,699 - root - INFO - CVAE optimizer: adam
+2023-08-21 13:58:52,699 - root - INFO - CVAE lr: 0.001000
+2023-08-21 13:58:52,699 - root - INFO - CVAE weight_decay: 0.000001
+2023-08-21 13:58:52,699 - root - INFO - CVAE load_model: False
+2023-08-21 13:58:52,699 - root - INFO - CVAE variational_beta: 1.000000
+2023-08-21 13:58:52,699 - root - INFO - CVAE model_path ./weights/cifar10/netG_cifar10.pt.tar
+2023-08-21 13:58:52,699 - root - INFO - ------------Stage-2--------------
+2023-08-21 13:58:52,699 - root - INFO - CVAD batchsize: 64
+2023-08-21 13:58:52,699 - root - INFO - CVAD epochs: 20
+2023-08-21 13:58:52,699 - root - INFO - CVAD optimizer: adam
+2023-08-21 13:58:52,699 - root - INFO - CVAD lr: 0.001000
+2023-08-21 13:58:52,699 - root - INFO - CVAD weight_decay: 0.000001
+2023-08-21 13:58:52,699 - root - INFO - CVAD load_model: False
+2023-08-21 13:58:52,699 - root - INFO - CVAD model_path: ./weights/cifar10/netD_cifar10.pt.tar
+2023-08-21 13:58:52,699 - root - INFO - Normal class:0
+2023-08-21 13:58:52,699 - root - INFO - CVAE ==> embnet
+2023-08-21 13:58:52,699 - root - INFO - CVAD ==> cls_model
+2023-08-21 13:58:52,700 - root - INFO - Build CVAE dataset for cifar10
+2023-08-21 13:58:53,759 - root - INFO - Build CVAD embnet for cifar10
+2023-08-21 13:58:56,779 - root - INFO - Epoch:0 Trainloss: 1.28098234
+2023-08-21 13:58:56,962 - root - INFO - Epoch:0   Valloss: 1.03979240
+2023-08-21 13:58:56,984 - root - INFO - ----------- CVAE evaluating------------
+2023-08-21 14:05:51,802 - root - INFO - Best Threshold=0.175109, G-Mean=0.571, FPR=0.471, TPR=0.617, AUC=0.595
+2023-08-21 14:05:52,593 - root - INFO - Epoch:1 Trainloss: 1.02192916
+2023-08-21 14:05:52,783 - root - INFO - Epoch:1   Valloss: 0.94657364
+2023-08-21 14:05:52,812 - root - INFO - ----------- CVAE evaluating------------
+2023-08-21 14:12:52,100 - root - INFO - Best Threshold=0.176843, G-Mean=0.578, FPR=0.423, TPR=0.579, AUC=0.605
+2023-08-21 14:12:52,904 - root - INFO - Epoch:2 Trainloss: 0.97552107
+2023-08-21 14:12:53,095 - root - INFO - Epoch:2   Valloss: 0.92145241
+2023-08-21 14:12:53,125 - root - INFO - ----------- CVAE evaluating------------
+2023-08-21 14:19:44,977 - root - INFO - Best Threshold=0.168822, G-Mean=0.582, FPR=0.426, TPR=0.590, AUC=0.608
+2023-08-21 14:19:45,773 - root - INFO - Epoch:3 Trainloss: 0.95583997
+2023-08-21 14:19:45,962 - root - INFO - Epoch:3   Valloss: 0.90330093
+2023-08-21 14:19:45,992 - root - INFO - ----------- CVAE evaluating------------
+2023-08-21 14:26:45,012 - root - INFO - Best Threshold=0.174948, G-Mean=0.580, FPR=0.392, TPR=0.554, AUC=0.606
+2023-08-21 14:26:45,826 - root - INFO - Epoch:4 Trainloss: 0.94395716
+2023-08-21 14:26:46,018 - root - INFO - Epoch:4   Valloss: 0.89352069
+2023-08-21 14:26:46,048 - root - INFO - ----------- CVAE evaluating------------
+2023-08-21 14:34:14,717 - root - INFO - Best Threshold=0.173619, G-Mean=0.581, FPR=0.388, TPR=0.551, AUC=0.608
+2023-08-21 14:34:15,525 - root - INFO - Epoch:5 Trainloss: 0.93102823
+2023-08-21 14:34:15,713 - root - INFO - Epoch:5   Valloss: 0.88662420
+2023-08-21 14:34:15,740 - root - INFO - ----------- CVAE evaluating------------
+2023-08-21 14:41:45,105 - root - INFO - Best Threshold=0.171352, G-Mean=0.582, FPR=0.387, TPR=0.553, AUC=0.607
+2023-08-21 14:41:45,915 - root - INFO - Epoch:6 Trainloss: 0.92667691
+2023-08-21 14:41:46,105 - root - INFO - Epoch:6   Valloss: 0.88266476
+2023-08-21 14:41:46,132 - root - INFO - ----------- CVAE evaluating------------
+2023-08-21 14:49:22,536 - root - INFO - Best Threshold=0.168392, G-Mean=0.581, FPR=0.399, TPR=0.561, AUC=0.606
+2023-08-21 14:49:23,342 - root - INFO - Epoch:7 Trainloss: 0.92700395
+2023-08-21 14:49:23,536 - root - INFO - Epoch:7   Valloss: 0.88096120
+2023-08-21 14:49:23,565 - root - INFO - ----------- CVAE evaluating------------
+2023-08-21 14:56:13,866 - root - INFO - Best Threshold=0.167319, G-Mean=0.582, FPR=0.396, TPR=0.560, AUC=0.606
+2023-08-21 14:56:14,667 - root - INFO - Epoch:8 Trainloss: 0.92127050
+2023-08-21 14:56:14,860 - root - INFO - Epoch:8   Valloss: 0.87853359
+2023-08-21 14:56:14,888 - root - INFO - ----------- CVAE evaluating------------
+2023-08-21 15:03:16,457 - root - INFO - Best Threshold=0.161359, G-Mean=0.581, FPR=0.423, TPR=0.585, AUC=0.606
+2023-08-21 15:03:17,268 - root - INFO - Epoch:9 Trainloss: 0.92103556
+2023-08-21 15:03:17,460 - root - INFO - Epoch:9   Valloss: 0.87590024
+2023-08-21 15:03:17,489 - root - INFO - ----------- CVAE evaluating------------
+2023-08-21 15:10:33,296 - root - INFO - Best Threshold=0.169367, G-Mean=0.583, FPR=0.383, TPR=0.550, AUC=0.608
+2023-08-21 15:10:34,081 - root - INFO - Epoch:10 Trainloss: 0.92045617
+2023-08-21 15:10:34,274 - root - INFO - Epoch:10   Valloss: 0.87186528
+2023-08-21 15:10:34,302 - root - INFO - ----------- CVAE evaluating------------
+2023-08-21 15:17:40,557 - root - INFO - Best Threshold=0.161419, G-Mean=0.582, FPR=0.418, TPR=0.583, AUC=0.608
+2023-08-21 15:17:41,366 - root - INFO - Epoch:11 Trainloss: 0.91535529
+2023-08-21 15:17:41,555 - root - INFO - Epoch:11   Valloss: 0.87102423
+2023-08-21 15:17:41,583 - root - INFO - ----------- CVAE evaluating------------
+2023-08-21 15:24:39,231 - root - INFO - Best Threshold=0.168690, G-Mean=0.582, FPR=0.384, TPR=0.551, AUC=0.607
+2023-08-21 15:24:40,009 - root - INFO - Epoch:12 Trainloss: 0.90981154
+2023-08-21 15:24:40,199 - root - INFO - Epoch:12   Valloss: 0.86959494
+2023-08-21 15:24:40,228 - root - INFO - ----------- CVAE evaluating------------
+2023-08-21 15:31:33,903 - root - INFO - Best Threshold=0.165523, G-Mean=0.583, FPR=0.397, TPR=0.564, AUC=0.608
+2023-08-21 15:31:34,712 - root - INFO - Epoch:13 Trainloss: 0.90928630
+2023-08-21 15:31:34,910 - root - INFO - Epoch:13   Valloss: 0.87117532
+2023-08-21 15:31:34,910 - root - INFO - ----------- CVAE evaluating------------
+2023-08-21 15:39:00,356 - root - INFO - Best Threshold=0.165377, G-Mean=0.583, FPR=0.395, TPR=0.562, AUC=0.607
+2023-08-21 15:39:01,154 - root - INFO - Epoch:14 Trainloss: 0.90690346
+2023-08-21 15:39:01,343 - root - INFO - Epoch:14   Valloss: 0.86669779
+2023-08-21 15:39:01,371 - root - INFO - ----------- CVAE evaluating------------
+2023-08-21 15:46:03,143 - root - INFO - Best Threshold=0.163617, G-Mean=0.582, FPR=0.398, TPR=0.563, AUC=0.607
+2023-08-21 15:46:03,948 - root - INFO - Epoch:15 Trainloss: 0.90619952
+2023-08-21 15:46:04,134 - root - INFO - Epoch:15   Valloss: 0.86737154
+2023-08-21 15:46:04,134 - root - INFO - ----------- CVAE evaluating------------
+2023-08-21 15:53:06,010 - root - INFO - Best Threshold=0.164520, G-Mean=0.583, FPR=0.395, TPR=0.562, AUC=0.607
+2023-08-21 15:53:06,814 - root - INFO - Epoch:16 Trainloss: 0.90846125
+2023-08-21 15:53:07,006 - root - INFO - Epoch:16   Valloss: 0.86663884
+2023-08-21 15:53:07,037 - root - INFO - ----------- CVAE evaluating------------
+2023-08-21 16:00:11,081 - root - INFO - Best Threshold=0.166993, G-Mean=0.583, FPR=0.386, TPR=0.553, AUC=0.607
+2023-08-21 16:00:11,883 - root - INFO - Epoch:17 Trainloss: 0.90417154
+2023-08-21 16:00:12,073 - root - INFO - Epoch:17   Valloss: 0.86527440
+2023-08-21 16:00:12,099 - root - INFO - ----------- CVAE evaluating------------
+2023-08-21 16:07:09,018 - root - INFO - Best Threshold=0.160771, G-Mean=0.583, FPR=0.411, TPR=0.577, AUC=0.607
+2023-08-21 16:07:09,821 - root - INFO - Epoch:18 Trainloss: 0.90473123
+2023-08-21 16:07:10,014 - root - INFO - Epoch:18   Valloss: 0.86647081
+2023-08-21 16:07:10,014 - root - INFO - ----------- CVAE evaluating------------
+2023-08-21 16:14:05,276 - root - INFO - Best Threshold=0.164806, G-Mean=0.582, FPR=0.399, TPR=0.564, AUC=0.607
+2023-08-21 16:14:06,085 - root - INFO - Epoch:19 Trainloss: 0.90676144
+2023-08-21 16:14:06,285 - root - INFO - Epoch:19   Valloss: 0.86604008
+2023-08-21 16:14:06,285 - root - INFO - ----------- CVAE evaluating------------
+2023-08-21 16:21:05,355 - root - INFO - Best Threshold=0.165391, G-Mean=0.582, FPR=0.398, TPR=0.563, AUC=0.607
+2023-08-21 16:21:06,159 - root - INFO - Epoch:20 Trainloss: 0.90082176
+2023-08-21 16:21:06,350 - root - INFO - Epoch:20   Valloss: 0.86422030
+2023-08-21 16:21:06,378 - root - INFO - ----------- CVAE evaluating------------
+2023-08-21 16:27:58,548 - root - INFO - Best Threshold=0.168824, G-Mean=0.583, FPR=0.383, TPR=0.551, AUC=0.608
+2023-08-21 16:27:59,340 - root - INFO - Epoch:21 Trainloss: 0.90206564
+2023-08-21 16:27:59,534 - root - INFO - Epoch:21   Valloss: 0.86396774
+2023-08-21 16:27:59,564 - root - INFO - ----------- CVAE evaluating------------
+2023-08-21 16:34:54,728 - root - INFO - Best Threshold=0.164811, G-Mean=0.582, FPR=0.399, TPR=0.564, AUC=0.608
+2023-08-21 16:34:55,527 - root - INFO - Epoch:22 Trainloss: 0.89958569
+2023-08-21 16:34:55,714 - root - INFO - Epoch:22   Valloss: 0.86400304
+2023-08-21 16:34:55,714 - root - INFO - ----------- CVAE evaluating------------
+2023-08-21 16:41:46,872 - root - INFO - Best Threshold=0.164953, G-Mean=0.583, FPR=0.397, TPR=0.563, AUC=0.608
+2023-08-21 16:41:47,680 - root - INFO - Epoch:23 Trainloss: 0.90137971
+2023-08-21 16:41:47,871 - root - INFO - Epoch:23   Valloss: 0.86410336
+2023-08-21 16:41:47,872 - root - INFO - ----------- CVAE evaluating------------
+2023-08-21 16:48:46,234 - root - INFO - Best Threshold=0.165114, G-Mean=0.582, FPR=0.399, TPR=0.564, AUC=0.607
+2023-08-21 16:48:47,019 - root - INFO - Epoch:24 Trainloss: 0.89953649
+2023-08-21 16:48:47,213 - root - INFO - Epoch:24   Valloss: 0.86336809
+2023-08-21 16:48:47,243 - root - INFO - ----------- CVAE evaluating------------
+2023-08-21 16:55:45,895 - root - INFO - Best Threshold=0.165251, G-Mean=0.582, FPR=0.399, TPR=0.564, AUC=0.608
+2023-08-21 16:55:46,699 - root - INFO - Epoch:25 Trainloss: 0.89988174
+2023-08-21 16:55:46,886 - root - INFO - Epoch:25   Valloss: 0.86425277
+2023-08-21 16:55:46,886 - root - INFO - ----------- CVAE evaluating------------
+2023-08-21 17:02:45,281 - root - INFO - Best Threshold=0.164200, G-Mean=0.584, FPR=0.400, TPR=0.568, AUC=0.608
+2023-08-21 17:02:46,084 - root - INFO - Epoch:26 Trainloss: 0.90001478
+2023-08-21 17:02:46,272 - root - INFO - Epoch:26   Valloss: 0.86350121
+2023-08-21 17:02:46,272 - root - INFO - ----------- CVAE evaluating------------
+2023-08-21 17:09:46,522 - root - INFO - Best Threshold=0.168214, G-Mean=0.583, FPR=0.382, TPR=0.549, AUC=0.608
+2023-08-21 17:09:47,323 - root - INFO - Epoch:27 Trainloss: 0.90170838
+2023-08-21 17:09:47,517 - root - INFO - Epoch:27   Valloss: 0.86265051
+2023-08-21 17:09:47,547 - root - INFO - ----------- CVAE evaluating------------
+2023-08-21 17:16:41,347 - root - INFO - Best Threshold=0.168651, G-Mean=0.583, FPR=0.381, TPR=0.549, AUC=0.608
+2023-08-21 17:16:42,151 - root - INFO - Epoch:28 Trainloss: 0.90167627
+2023-08-21 17:16:42,344 - root - INFO - Epoch:28   Valloss: 0.86305468
+2023-08-21 17:16:42,344 - root - INFO - ----------- CVAE evaluating------------
+2023-08-21 17:23:38,743 - root - INFO - Best Threshold=0.164616, G-Mean=0.583, FPR=0.397, TPR=0.565, AUC=0.608
+2023-08-21 17:23:39,550 - root - INFO - Epoch:29 Trainloss: 0.89824146
+2023-08-21 17:23:39,743 - root - INFO - Epoch:29   Valloss: 0.86325294
+2023-08-21 17:23:39,743 - root - INFO - ----------- CVAE evaluating------------
+2023-08-21 17:30:36,200 - root - INFO - Best Threshold=0.161761, G-Mean=0.582, FPR=0.408, TPR=0.573, AUC=0.608
+2023-08-21 17:30:37,011 - root - INFO - Epoch:30 Trainloss: 0.90170616
+2023-08-21 17:30:37,202 - root - INFO - Epoch:30   Valloss: 0.86336580
+2023-08-21 17:30:37,202 - root - INFO - ----------- CVAE evaluating------------
+2023-08-21 17:37:27,304 - root - INFO - Best Threshold=0.167613, G-Mean=0.583, FPR=0.385, TPR=0.552, AUC=0.608
+2023-08-21 17:37:28,112 - root - INFO - Epoch:31 Trainloss: 0.89930658
+2023-08-21 17:37:28,306 - root - INFO - Epoch:31   Valloss: 0.86272366
+2023-08-21 17:37:28,306 - root - INFO - ----------- CVAE evaluating------------
+2023-08-21 17:44:20,013 - root - INFO - Best Threshold=0.168649, G-Mean=0.583, FPR=0.381, TPR=0.550, AUC=0.609
+2023-08-21 17:44:20,822 - root - INFO - Epoch:32 Trainloss: 0.89565790
+2023-08-21 17:44:21,015 - root - INFO - Epoch:32   Valloss: 0.86395115
+2023-08-21 17:44:21,016 - root - INFO - ----------- CVAE evaluating------------
+2023-08-21 17:51:45,610 - root - INFO - Best Threshold=0.164778, G-Mean=0.583, FPR=0.397, TPR=0.564, AUC=0.608
+2023-08-21 17:51:46,418 - root - INFO - Epoch:33 Trainloss: 0.89685340
+2023-08-21 17:51:46,610 - root - INFO - Epoch:33   Valloss: 0.86296945
+2023-08-21 17:51:46,610 - root - INFO - ----------- CVAE evaluating------------
+2023-08-21 17:58:38,835 - root - INFO - Best Threshold=0.166058, G-Mean=0.583, FPR=0.392, TPR=0.560, AUC=0.608
+2023-08-21 17:58:39,635 - root - INFO - Epoch:34 Trainloss: 0.89894090
+2023-08-21 17:58:39,826 - root - INFO - Epoch:34   Valloss: 0.86206525
+2023-08-21 17:58:39,855 - root - INFO - ----------- CVAE evaluating------------
+2023-08-21 18:05:35,880 - root - INFO - Best Threshold=0.165576, G-Mean=0.584, FPR=0.393, TPR=0.562, AUC=0.609
+2023-08-21 18:05:36,689 - root - INFO - Epoch:35 Trainloss: 0.90096950
+2023-08-21 18:05:36,883 - root - INFO - Epoch:35   Valloss: 0.86130350
+2023-08-21 18:05:36,913 - root - INFO - ----------- CVAE evaluating------------
+2023-08-21 18:12:50,587 - root - INFO - Best Threshold=0.167297, G-Mean=0.584, FPR=0.383, TPR=0.552, AUC=0.608
+2023-08-21 18:12:51,386 - root - INFO - Epoch:36 Trainloss: 0.89660266
+2023-08-21 18:12:51,578 - root - INFO - Epoch:36   Valloss: 0.86251609
+2023-08-21 18:12:51,578 - root - INFO - ----------- CVAE evaluating------------
+2023-08-21 18:19:55,566 - root - INFO - Best Threshold=0.165610, G-Mean=0.583, FPR=0.394, TPR=0.560, AUC=0.608
+2023-08-21 18:19:56,379 - root - INFO - Epoch:37 Trainloss: 0.89853456
+2023-08-21 18:19:56,571 - root - INFO - Epoch:37   Valloss: 0.86145055
+2023-08-21 18:19:56,571 - root - INFO - ----------- CVAE evaluating------------
+2023-08-21 18:27:10,701 - root - INFO - Best Threshold=0.161695, G-Mean=0.583, FPR=0.411, TPR=0.577, AUC=0.608
+2023-08-21 18:27:11,495 - root - INFO - Epoch:38 Trainloss: 0.89443389
+2023-08-21 18:27:11,688 - root - INFO - Epoch:38   Valloss: 0.86119093
+2023-08-21 18:27:11,716 - root - INFO - ----------- CVAE evaluating------------
+2023-08-21 18:34:05,077 - root - INFO - Best Threshold=0.165072, G-Mean=0.584, FPR=0.394, TPR=0.562, AUC=0.608
+2023-08-21 18:34:05,873 - root - INFO - Epoch:39 Trainloss: 0.89308620
+2023-08-21 18:34:06,070 - root - INFO - Epoch:39   Valloss: 0.86146966
+2023-08-21 18:34:06,070 - root - INFO - ----------- CVAE evaluating------------
+2023-08-21 18:41:00,861 - root - INFO - Best Threshold=0.164781, G-Mean=0.584, FPR=0.395, TPR=0.563, AUC=0.608
+2023-08-21 18:41:01,649 - root - INFO - Epoch:40 Trainloss: 0.89723791
+2023-08-21 18:41:01,838 - root - INFO - Epoch:40   Valloss: 0.86147443
+2023-08-21 18:41:01,839 - root - INFO - ----------- CVAE evaluating------------
+2023-08-21 18:47:56,344 - root - INFO - Best Threshold=0.164928, G-Mean=0.582, FPR=0.396, TPR=0.561, AUC=0.607
+2023-08-21 18:47:57,150 - root - INFO - Epoch:41 Trainloss: 0.90121842
+2023-08-21 18:47:57,339 - root - INFO - Epoch:41   Valloss: 0.86276963
+2023-08-21 18:47:57,339 - root - INFO - ----------- CVAE evaluating------------
+2023-08-21 18:55:12,767 - root - INFO - Best Threshold=0.164654, G-Mean=0.583, FPR=0.395, TPR=0.562, AUC=0.608
+2023-08-21 18:55:13,578 - root - INFO - Epoch:42 Trainloss: 0.89840832
+2023-08-21 18:55:13,770 - root - INFO - Epoch:42   Valloss: 0.86206976
+2023-08-21 18:55:13,770 - root - INFO - ----------- CVAE evaluating------------
+2023-08-21 19:02:11,387 - root - INFO - Best Threshold=0.164773, G-Mean=0.584, FPR=0.394, TPR=0.562, AUC=0.608
+2023-08-21 19:02:12,171 - root - INFO - Epoch:43 Trainloss: 0.89571611
+2023-08-21 19:02:12,359 - root - INFO - Epoch:43   Valloss: 0.86280412
+2023-08-21 19:02:12,359 - root - INFO - ----------- CVAE evaluating------------
+2023-08-21 19:09:04,586 - root - INFO - Best Threshold=0.163102, G-Mean=0.583, FPR=0.404, TPR=0.571, AUC=0.609
+2023-08-21 19:09:05,389 - root - INFO - Epoch:44 Trainloss: 0.89562256
+2023-08-21 19:09:05,576 - root - INFO - Epoch:44   Valloss: 0.86046636
+2023-08-21 19:09:05,605 - root - INFO - ----------- CVAE evaluating------------
+2023-08-21 19:15:57,928 - root - INFO - Best Threshold=0.168313, G-Mean=0.583, FPR=0.380, TPR=0.549, AUC=0.608
+2023-08-21 19:15:58,729 - root - INFO - Epoch:45 Trainloss: 0.89507686
+2023-08-21 19:15:58,918 - root - INFO - Epoch:45   Valloss: 0.86145838
+2023-08-21 19:15:58,918 - root - INFO - ----------- CVAE evaluating------------
+2023-08-21 19:22:57,058 - root - INFO - Best Threshold=0.168694, G-Mean=0.584, FPR=0.379, TPR=0.549, AUC=0.608
+2023-08-21 19:22:57,859 - root - INFO - Epoch:46 Trainloss: 0.89620108
+2023-08-21 19:22:58,051 - root - INFO - Epoch:46   Valloss: 0.86046223
+2023-08-21 19:22:58,080 - root - INFO - ----------- CVAE evaluating------------
+2023-08-21 19:30:04,267 - root - INFO - Best Threshold=0.165373, G-Mean=0.583, FPR=0.394, TPR=0.561, AUC=0.608
+2023-08-21 19:30:05,079 - root - INFO - Epoch:47 Trainloss: 0.89177048
+2023-08-21 19:30:05,270 - root - INFO - Epoch:47   Valloss: 0.86092991
+2023-08-21 19:30:05,270 - root - INFO - ----------- CVAE evaluating------------
+2023-08-21 19:37:13,283 - root - INFO - Best Threshold=0.165402, G-Mean=0.583, FPR=0.390, TPR=0.558, AUC=0.608
+2023-08-21 19:37:14,064 - root - INFO - Epoch:48 Trainloss: 0.89134549
+2023-08-21 19:37:14,254 - root - INFO - Epoch:48   Valloss: 0.86106740
+2023-08-21 19:37:14,254 - root - INFO - ----------- CVAE evaluating------------
+2023-08-21 19:44:07,317 - root - INFO - Best Threshold=0.165257, G-Mean=0.584, FPR=0.392, TPR=0.561, AUC=0.609
+2023-08-21 19:44:08,122 - root - INFO - Epoch:49 Trainloss: 0.89225984
+2023-08-21 19:44:08,311 - root - INFO - Epoch:49   Valloss: 0.86178312
+2023-08-21 19:44:08,311 - root - INFO - ----------- CVAE evaluating------------
+2023-08-21 19:51:06,719 - root - INFO - Best Threshold=0.164682, G-Mean=0.584, FPR=0.395, TPR=0.563, AUC=0.608
+2023-08-21 19:51:07,526 - root - INFO - Epoch:50 Trainloss: 0.89369270
+2023-08-21 19:51:07,715 - root - INFO - Epoch:50   Valloss: 0.86110641
+2023-08-21 19:51:07,715 - root - INFO - ----------- CVAE evaluating------------
+2023-08-21 19:58:03,488 - root - INFO - Best Threshold=0.164516, G-Mean=0.584, FPR=0.396, TPR=0.564, AUC=0.608
+2023-08-21 19:58:04,287 - root - INFO - Epoch:51 Trainloss: 0.89194522
+2023-08-21 19:58:04,479 - root - INFO - Epoch:51   Valloss: 0.86062794
+2023-08-21 19:58:04,480 - root - INFO - ----------- CVAE evaluating------------
+2023-08-21 20:04:56,826 - root - INFO - Best Threshold=0.164095, G-Mean=0.583, FPR=0.399, TPR=0.565, AUC=0.608
+2023-08-21 20:04:57,624 - root - INFO - Epoch:52 Trainloss: 0.89192446
+2023-08-21 20:04:57,814 - root - INFO - Epoch:52   Valloss: 0.86043663
+2023-08-21 20:04:57,844 - root - INFO - ----------- CVAE evaluating------------

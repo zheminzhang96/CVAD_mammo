@@ -1,0 +1,28 @@
+2023-09-07 16:11:29,867 - root - INFO - Log file is ./logs/breast/log_CVAD_0.txt
+2023-09-07 16:11:29,867 - root - INFO - Data path is ./
+2023-09-07 16:11:29,867 - root - INFO - Dataset: breast
+2023-09-07 16:11:29,867 - root - INFO - Net Name: CVAD
+2023-09-07 16:11:29,867 - root - INFO - CVAE Conv capacity: 4
+2023-09-07 16:11:29,867 - root - INFO - image channel: 1
+2023-09-07 16:11:29,867 - root - INFO - ------------Stage-1--------------
+2023-09-07 16:11:29,867 - root - INFO - CVAE batchsize: 64
+2023-09-07 16:11:29,867 - root - INFO - CVAE epochs: 100
+2023-09-07 16:11:29,867 - root - INFO - CVAE optimizer: adam
+2023-09-07 16:11:29,867 - root - INFO - CVAE lr: 0.001000
+2023-09-07 16:11:29,867 - root - INFO - CVAE weight_decay: 0.000001
+2023-09-07 16:11:29,867 - root - INFO - CVAE load_model: False
+2023-09-07 16:11:29,867 - root - INFO - CVAE variational_beta: 1.000000
+2023-09-07 16:11:29,867 - root - INFO - CVAE model_path /mnt/storage/breast_cancer_kaggle/weights/breast/netG_breast.pt.tar
+2023-09-07 16:11:29,867 - root - INFO - ------------Stage-2--------------
+2023-09-07 16:11:29,867 - root - INFO - CVAD batchsize: 64
+2023-09-07 16:11:29,867 - root - INFO - CVAD epochs: 20
+2023-09-07 16:11:29,868 - root - INFO - CVAD optimizer: adam
+2023-09-07 16:11:29,868 - root - INFO - CVAD lr: 0.001000
+2023-09-07 16:11:29,868 - root - INFO - CVAD weight_decay: 0.000001
+2023-09-07 16:11:29,868 - root - INFO - CVAD load_model: False
+2023-09-07 16:11:29,868 - root - INFO - CVAD model_path: /mnt/storage/breast_cancer_kaggle/weights/breast/netD_breast.pt.tar
+2023-09-07 16:11:29,868 - root - INFO - Normal class:0
+2023-09-07 16:11:29,868 - root - INFO - CVAE ==> embnet
+2023-09-07 16:11:29,868 - root - INFO - CVAD ==> cls_model
+2023-09-07 16:11:29,868 - root - INFO - Build CVAE dataset for breast
+2023-09-07 16:37:44,787 - root - INFO - Build CVAD embnet for breast

@@ -8,11 +8,14 @@ import torch
 from torch import nn
 
 imgSize = 256
+latent_dims = 512
+channel = 1
 
 class Discriminator(nn.Module):
-    def __init__(self, channel=3, capacity = 16):
+    def __init__(self,  capacity = 16, channel=3):
         super(Discriminator, self).__init__()
         self.c = capacity
+        #print("Discriminator", channel)
         self.conv1 = nn.Sequential(
             nn.Conv2d(in_channels=channel, out_channels=self.c, kernel_size=4, stride=2, padding=1),
             nn.BatchNorm2d(self.c),
@@ -46,6 +49,7 @@ class Discriminator(nn.Module):
         )
 
     def forward(self, x):
+        #print(x.shape)
         x = self.conv1(x)
         x = self.conv2(x)
         x = self.conv3(x)

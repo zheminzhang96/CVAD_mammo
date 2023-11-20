@@ -19,6 +19,7 @@ class CVAE(nn.Module):
     def __init__(self,  capacity=16, channel=3):
         super(CVAE, self).__init__()
         self.c = capacity
+        #print("CVAE channel:", channel)
         self.conv1 = nn.Sequential(
             nn.Conv2d(in_channels=channel, out_channels=self.c, kernel_size=4, stride=2, padding=1),
             nn.BatchNorm2d(self.c),
@@ -101,6 +102,7 @@ class CVAE(nn.Module):
             return mu  
     
     def forward(self, x):
+        #print(x.shape)
         x = self.conv1(x)
         x = self.conv2(x)
         x = self.conv3(x)
